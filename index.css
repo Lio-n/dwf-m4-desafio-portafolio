@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+/* Propiedades Reutilizables */
+.title--big {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+.title--lil {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*<!--Home-->*/
+.home {
+  background-color: #212121;
+  height: 100vh;
+}
+/*<!--Title-Welcome-->*/
+.cont-title {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*###########################*/
+/*###########################*/
+/*<!--Personal-Info-->*/
+.per-info {
+  padding: 55px 32px 0 32px;
+  min-height: 450px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+}
+.cont-image {
+  max-width: 380px;
+  max-height: 480px;
+  margin-right: 50px;
+  display: none;
+}
+@media (min-width: 1000px) {
+  .cont-image {
+    display: inherit;
+  }
+}
+.per-info__image {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+@media (min-width: 1000px) {
+  .per-info__image {
+    display: inherit;
+  }
+}
+.cont-per-info {
+  max-width: 610px;
+}
+.per-info__title {
+  text-align: center;
+  margin-bottom: 46px;
+}
+@media (min-width: 1000px) {
+  .per-info__title {
+    text-align: inherit;
+  }
+}
+.per-info__paragraph {
+  margin-bottom: 50px;
+}
+/*###########################*/
+/*###########################*/
+/*<!--Services-->*/
+.svcs {
+  min-height: 600px;
+  height: auto;
+  padding: 70px 50px 60px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.svcs__title {
+  margin-bottom: 50px;
+}
+.cont-svcs-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cont-svcs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  max-width: 315px;
+}
+@media (min-width: 768px) {
+  .cont-svcs {
+    margin-bottom: 70px;
+  }
+}
+.svcs__image {
+  background-color: turquoise;
+  width: 138px;
+  height: 128px;
+}
+.svcs__sub-title {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
