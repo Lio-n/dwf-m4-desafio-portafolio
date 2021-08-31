@@ -16,6 +16,7 @@
     <!--Links-->
     <!--Header-Zone-->
     <link rel="stylesheet" href="./Header/header.css" />
+    <script defer src="./Header/script.js"></script>
     <!--Home-Zone-->
     <link rel="stylesheet" href="./index.css" />
     <!--Contact-Zone-->
@@ -34,12 +35,22 @@
           <a class="logo" href="#" target="_blank"><p>Lion</p></a>
         </label>
         <!--Menu-Burger-->
-        <a href="#" target="_blank" class="home__menu-wrapper">
-          <div class="menu-burger"></div>
-          <div class="menu-burger"></div>
-          <div class="menu-burger"></div>
-        </a>
+        <ul class="cont-nav-menu">
+          <div class="home__menu-items">
+            <li class="home__item"><a href="">Potafolio</a></li>
+            <li class="home__item"><a href="">Servicios</a></li>
+            <li class="home__item"><a href="">Contacto</a></li>
+          </div>
+        </ul>
+        <div id="menu-burger" class="burger">
+          <span class="burger__item"></span>
+        </div>
       </header>
+      <div class="nav">
+        <a class="nav__item">Buenos</a>
+        <a class="nav__item">Dias</a>
+        <a class="nav__item">Sol</a>
+      </div>
       <!--Title-Welcome-->
       <div class="cont-title">
         <h1 class="home__title title--big">Hola</h1>
