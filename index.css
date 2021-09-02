@@ -2,20 +2,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap"); */
 body {
-  font-family: "Montserrat", sans-serif;
+  background-color: hsl(233, 47%, 7%); /* Test Header.html */
   font-family: "Poppins", sans-serif;
 }
 /* Propiedades Reutilizables */
-.title--big {
+.title--big,
+.title--lil {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
 .title--lil {
-  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
-.flex-center {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +28,8 @@ body {
 }
 /*<!--Title-Welcome-->*/
 .cont-title {
-  height: 100%;
-  display: flex;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 /*###########################*/
 /*###########################*/
@@ -82,10 +80,7 @@ body {
   height: auto;
   padding: 70px 50px 60px 50px;
   text-align: center;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .svcs__title {
   margin-bottom: 50px;
@@ -97,9 +92,7 @@ body {
   gap: 10px;
 }
 .cont-svcs {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 100px;
   max-width: 315px;
 }

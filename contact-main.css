@@ -4,7 +4,8 @@
   color: #fff;
   text-align: center;
   padding: 2rem;
-  min-height: 46.8rem;
+  height: 90vh;
+  min-height: 30rem;
 }
 @media (min-width: 425px) {
   .contact {
@@ -14,11 +15,6 @@
 @media (min-width: 768px) {
   .contact {
     height: 90vh;
-    background: linear-gradient(
-      107.17deg,
-      #408195 29.35%,
-      rgba(0, 210, 135, 0.8) 78.73%
-    );
   }
 }
 
@@ -38,7 +34,7 @@
 }
 
 .contact__title {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .contact__title {

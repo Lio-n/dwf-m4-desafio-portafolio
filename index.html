@@ -16,48 +16,30 @@
     <!--Links-->
     <!--Header-Zone-->
     <link rel="stylesheet" href="./Header/header.css" />
-    <script defer src="./Header/script.js"></script>
+    <script defer src="./Header/header.js"></script>
     <!--Home-Zone-->
     <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
     <!--Contact-Zone-->
-    <link rel="stylesheet" href="./Contact/contact.css" />
+    <link rel="stylesheet" href="/contact-main.css" />
+    <script defer src="./Contact/contact.js"></script>
     <!--Footer-Zone-->
     <link rel="stylesheet" href="./Footer/footer.css" />
+    <script defer src="/Footer/footer.js"></script>
     <title>Portafolio</title>
   </head>
   <body>
     <!--Home-->
+    <header class="header"></header>
     <section class="home">
-      <!--Header-->
-      <header class="home-header" role="banner">
-        <!--Logo-->
-        <label class="home__logo">
-          <a class="logo" href="#" target="_blank"><p>Lion</p></a>
-        </label>
-        <!--Menu-Burger-->
-        <ul class="cont-nav-menu">
-          <div class="home__menu-items">
-            <li class="home__item"><a href="">Potafolio</a></li>
-            <li class="home__item"><a href="">Servicios</a></li>
-            <li class="home__item"><a href="">Contacto</a></li>
-          </div>
-        </ul>
-        <div id="menu-burger" class="burger">
-          <span class="burger__item"></span>
-        </div>
-      </header>
-      <div class="nav">
-        <a class="nav__item">Buenos</a>
-        <a class="nav__item">Dias</a>
-        <a class="nav__item">Sol</a>
-      </div>
       <!--Title-Welcome-->
-      <div class="cont-title">
+      <div class="cont-title center">
         <h1 class="home__title title--big">Hola</h1>
         <h2 class="home__title title--lil">Soy Lion</h2>
       </div>
     </section>
     <!--/Home-->
+
     <!--Personal-Info-->
     <section class="per-info">
       <div class="cont-image">
@@ -78,15 +60,15 @@
     </section>
     <!--/Personal-Info-->
 
-    <main role="main">
+    <main>
       <!--Con este div pondre todo desde JS *Borrar al terminar*-->
 
       <div>
         <!--Block-Services-->
-        <section class="svcs">
+        <section class="svcs center">
           <h2 class="svcs__title title--lil">Mis servicios</h2>
           <div class="cont-svcs-main">
-            <div class="cont-svcs">
+            <div class="cont-svcs center">
               <div class="svcs__image"></div>
               <h3 class="svcs__sub-title">Hago Cosas</h3>
               <p class="svcs__paragraph">
@@ -97,7 +79,7 @@
                 expedita voluptatibus.
               </p>
             </div>
-            <div class="cont-svcs">
+            <div class="cont-svcs center">
               <div class="svcs__image"></div>
               <h3 class="svcs__sub-title">Hago Cosas</h3>
               <p class="svcs__paragraph">
@@ -108,7 +90,7 @@
                 expedita voluptatibus.
               </p>
             </div>
-            <div class="cont-svcs">
+            <div class="cont-svcs center">
               <div class="svcs__image"></div>
               <h3 class="svcs__sub-title">Hago Cosas</h3>
               <p class="svcs__paragraph">
@@ -122,70 +104,11 @@
           </div>
         </section>
         <!--Block-Contact-->
-        <section class="contact">
-          <div class="contact__container">
-            <h2 class="contact__title title--lil">Escribime</h2>
-
-            <form class="contact-form">
-              <!--Contact-Form__Name-->
-              <label class="contact-form__group">
-                <span class="contact-form__span">NOMBRE</span>
-                <input type="text" class="contact-form__input" />
-              </label>
-
-              <!--Contact-Form__Email-->
-              <label class="contact-form__group">
-                <span class="contact-form__span">EMAIL</span>
-                <input type="email" class="contact-form__input" />
-              </label>
-
-              <!--Contact-Form__Message-->
-              <label class="contact-form__group">
-                <span class="contact-form__span">MENSAJE</span>
-                <textarea class="contact-form__textarea"></textarea>
-              </label>
-
-              <button class="contact-form__button">Enviar</button>
-            </form>
-          </div>
-        </section>
+        <section class="contact center"></section>
       </div>
     </main>
     <!--Footer-Zone-->
-    <footer role="contentinfo">
-      <section class="footer">
-        <div class="footer__logo">
-          <a class="logo" href="#" target="_blank"><p>@Lion</p></a>
-        </div>
-        <!--Links-Social-Media-->
-        <div class="cont-social-net">
-          <!--Instagram-->
-          <a
-            class="footer__social"
-            href="https://www.instagram.com/tropical_sn0w/"
-            target="_blank"
-          >
-            Instagram <img src="./Image/instagram.svg" alt="instagram-icon"
-          /></a>
-          <!--Linkedin-->
-          <a
-            class="footer__social"
-            href="https://www.linkedin.com/in/leonardo-fontan/"
-            target="_blank"
-          >
-            Linkedin <img src="./Image/Linkedin.svg" alt="linkedin-icon"
-          /></a>
-          <!--Github-->
-          <a
-            class="footer__social"
-            href="https://github.com/Lio-n"
-            target="_blank"
-          >
-            Github <img src="./Image/Github.svg" alt="github-icon"
-          /></a>
-        </div>
-      </section>
-    </footer>
+    <footer></footer>
     <!--/Footer-Zone-->
   </body>
 </html>
