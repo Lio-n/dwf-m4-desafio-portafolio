@@ -1,5 +1,5 @@
 /*<!--Servicios-->*/
-
+/* Utiliza propiedades del Index.css */
 body > .home {
   height: auto;
   padding: 200px 0 100px 0;
@@ -8,7 +8,8 @@ body > .home {
 @media (min-width: 768px) {
   body > .home {
     padding-top: 250px;
-    background-image: linear-gradient(to bottom right, #6fdbcc, #2a85ba);
+    /* background-image: linear-gradient(to bottom right, #6fdbcc, #2a85ba); */
+    background-image: linear-gradient(to bottom right, #e82c54, #070960);
     justify-content: flex-end;
   }
 }
@@ -21,38 +22,8 @@ body > .home {
     margin-left: 90px;
   }
 }
-.svcs {
-  min-height: 600px;
-  height: auto;
-  padding: 70px 50px 60px 50px;
-  text-align: center;
-  flex-direction: column;
-}
-
-.cont-svcs-main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.cont-svcs {
-  flex-direction: column;
-  margin-bottom: 100px;
-  max-width: 315px;
-  justify-content: space-around;
-}
-@media (min-width: 768px) {
-  .cont-svcs {
-    margin-bottom: 70px;
-  }
-}
 .cont-svcs > .svcs__image {
   background-color: rgb(179, 26, 218);
   width: 18rem;
   height: 10.6rem;
-}
-.svcs__sub-title {
-  margin: 10px 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
 }

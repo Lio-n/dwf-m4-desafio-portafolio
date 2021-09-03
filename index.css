@@ -1,3 +1,9 @@
+/*<!--Index-->*/
+/* 
+Este Index.css contiene propiedades Compartidas tanto por 
+contact.css, portafolio.css y service.css.
+*/
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -87,7 +93,6 @@ body {
 }
 .cont-svcs-main {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-around;
@@ -96,6 +101,7 @@ body {
   flex-direction: column;
   margin-bottom: 100px;
   max-width: 315px;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .cont-svcs {
@@ -111,4 +117,89 @@ body {
   margin: 10px 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
+}
+
+/*<!--Contacto-->*/
+.contact {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  height: 90vh;
+  min-height: 30rem;
+}
+@media (min-width: 425px) {
+  .contact {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    height: 90vh;
+  }
+}
+
+.contact__container {
+  min-width: 16rem;
+}
+@media (min-width: 414px) {
+  .contact__container {
+    min-width: 21.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .contact__container {
+    display: flex;
+    width: auto;
+  }
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .contact__title {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    width: 390px;
+  }
+}
+/*<!--Contact-Form__Name-->*/
+/*<!--Contact-Form__Email-->*/
+.contact-form__group {
+  display: block;
+  text-align: initial;
+  margin-bottom: 20px;
+}
+.contact-form__span {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 13px;
+}
+.contact-form__input {
+  height: 2.8rem;
+  width: 100%;
+}
+
+/*<!--Contact-Form__Message-->*/
+.contact-form__textarea {
+  height: 7rem;
+  width: 100%;
+}
+
+.contact-form__button {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  background-color: #2c2c2c;
+  height: 2.8rem;
+  width: 100%;
+  margin-top: 25px;
 }
