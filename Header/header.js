@@ -16,10 +16,8 @@ const headerComponent = (headerEl) => {
         <!--Menu-Burger-->
         <ul class="cont-nav-menu">
           <div class="home__menu-items">
-            <li class="home__item">
-              <a href="./portafolio.html">Potafolio</a>
-            </li>
-            <li class="home__item"><a href="">Servicios</a></li>
+            <li class="home__item"><a href="./portafolio.html">Potafolio</a></li>
+            <li class="home__item"><a href="./service.html">Servicios</a></li>
             <li class="home__item"><a href="./contact.html">Contacto</a></li>
           </div>
         </ul>
@@ -29,7 +27,7 @@ const headerComponent = (headerEl) => {
       </header>
       <div class="nav">
         <a class="nav__item" href="./portafolio.html">Portafolio</a>
-        <a class="nav__item">Dias</a>
+        <a class="nav__item" href="./service.html">Servicios</a>
         <a class="nav__item" href="./contact.html">Contacto</a>
       </div>
   `;
