@@ -17,10 +17,10 @@ const headerComponent = (headerEl) => {
         <ul class="cont-nav-menu">
           <div class="home__menu-items">
             <li class="home__item">
-              <a href="/Portafolio/portafolio.html">Potafolio</a>
+              <a href="/portafolio.html">Potafolio</a>
             </li>
             <li class="home__item"><a href="">Servicios</a></li>
-            <li class="home__item"><a href="/Contact/contact.html">Contacto</a></li>
+            <li class="home__item"><a href="./contact.html">Contacto</a></li>
           </div>
         </ul>
         <div class="menu-btn center">
@@ -28,7 +28,7 @@ const headerComponent = (headerEl) => {
         </div>
       </header>
       <div class="nav">
-        <a class="nav__item" href="/Portafolio/portafolio.html">Portafolio</a>
+        <a class="nav__item" href="/portafolio.html">Portafolio</a>
         <a class="nav__item">Dias</a>
         <a class="nav__item" href="/Contact/contact.html">Contacto</a>
       </div>
