@@ -14,12 +14,14 @@
     />
 
     <!--Links-->
+    <script async src="./Service/service.js"></script>
     <!--Header-Zone-->
     <link rel="stylesheet" href="./Header/header.css" />
     <script defer src="./Header/header.js"></script>
     <!--Service-Zone-->
     <link rel="stylesheet" href="./Service/service.css" />
     <!--El portafolio.js es compartido tanto por potafolio.html y service.html-->
+
     <script defer src="./Portafolio/portafolio.js"></script>
     <!--Index-Zone-->
     <link rel="stylesheet" href="./index.css" />
@@ -38,70 +40,21 @@
         <h1 class="home__title title--big">Servicios</h1>
       </div>
     </section>
+    <!--A este cont-svcs-main debo agregarle contenido desde el <Template>-->
     <section class="svcs">
-      <div class="cont-svcs-main">
-        <div class="cont-svcs center">
-          <div class="svcs__image"></div>
-          <h3 class="svcs__sub-title">Hago Cosas</h3>
-          <p class="svcs__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            iste perferendis quidem dolorum laudantium, exercitationem hic nemo
-            quibusdam consectetur aliquam rem quisquam maiores cumque tempore
-            repellendus? Quasi fugiat expedita voluptatibus.
-          </p>
-        </div>
-        <div class="cont-svcs center">
-          <div class="svcs__image"></div>
-          <h3 class="svcs__sub-title">Hago Cosas</h3>
-          <p class="svcs__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            iste perferendis quidem dolorum laudantium, exercitationem hic nemo
-            quibusdam consectetur aliquam rem quisquam maiores cumque tempore
-            repellendus? Quasi fugiat expedita voluptatibus.
-          </p>
-        </div>
-        <div class="cont-svcs center">
-          <div class="svcs__image"></div>
-          <h3 class="svcs__sub-title">Hago Cosas</h3>
-          <p class="svcs__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            iste perferendis quidem dolorum laudantium, exercitationem hic nemo
-            quibusdam consectetur aliquam rem quisquam maiores cumque tempore
-            repellendus? Quasi fugiat expedita voluptatibus.
-          </p>
-        </div>
-        <div class="cont-svcs center">
-          <div class="svcs__image"></div>
-          <h3 class="svcs__sub-title">Hago Cosas</h3>
-          <p class="svcs__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            iste perferendis quidem dolorum laudantium, exercitationem hic nemo
-            quibusdam consectetur aliquam rem quisquam maiores cumque tempore
-            repellendus? Quasi fugiat expedita voluptatibus.
-          </p>
-        </div>
-        <div class="cont-svcs center">
-          <div class="svcs__image"></div>
-          <h3 class="svcs__sub-title">Hago Cosas</h3>
-          <p class="svcs__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            iste perferendis quidem dolorum laudantium, exercitationem hic nemo
-            quibusdam consectetur aliquam rem quisquam maiores cumque tempore
-            repellendus? Quasi fugiat expedita voluptatibus.
-          </p>
-        </div>
-        <div class="cont-svcs center">
-          <div class="svcs__image"></div>
-          <h3 class="svcs__sub-title">Hago Cosas</h3>
-          <p class="svcs__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            iste perferendis quidem dolorum laudantium, exercitationem hic nemo
-            quibusdam consectetur aliquam rem quisquam maiores cumque tempore
-            repellendus? Quasi fugiat expedita voluptatibus.
-          </p>
-        </div>
-      </div>
+      <div class="cont-svcs-main"></div>
     </section>
+    <!--Template-->
+    <template>
+      <div class="cont-svcs center">
+        <a class="svcs__link" href="">
+          <img class="svcs__image" src="" alt="" />
+        </a>
+        <!--<div class="svcs__image"></div> -->
+        <h3 class="svcs__sub-title"></h3>
+        <p class="svcs__paragraph"></p>
+      </div>
+    </template>
     <!--Footer-->
     <footer></footer>
   </body>
