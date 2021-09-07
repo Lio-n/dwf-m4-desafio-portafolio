@@ -15,19 +15,19 @@ const contactComponent = (contactEl) => {
           <!--Contact-Form__Name-->
           <label class="contact-form__group">
             <span class="contact-form__span">NOMBRE</span>
-            <input type="text" name="name" class="contact-form__input" />
+            <input type="text" name="name" class="contact-form__input border-inputs " />
           </label>
 
           <!--Contact-Form__Email-->
           <label class="contact-form__group">
             <span class="contact-form__span">EMAIL</span>
-            <input type="email"  name="email" class="contact-form__input" />
+            <input type="email"  name="email" class="contact-form__input border-inputs " />
           </label>
 
           <!--Contact-Form__Message-->
           <label class="contact-form__group">
             <span class="contact-form__span">MENSAJE</span>
-            <textarea  name="message" class="contact-form__textarea"></textarea>
+            <textarea  name="message" class="contact-form__textarea border-inputs "></textarea>
           </label>
 
           <button class="contact-form__button" type="submit">Enviar</button>
