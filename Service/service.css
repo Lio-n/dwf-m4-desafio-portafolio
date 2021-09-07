@@ -1,6 +1,8 @@
 /*<!--Servicios-->*/
 /* Utiliza propiedades del Index.css */
 body > .home {
+  background-image: none;
+  background-color: hsl(233, 47%, 7%);
   height: auto;
   padding: 200px 0 100px 0;
   transition: all 0.5s ease-in-out;
@@ -8,13 +10,14 @@ body > .home {
 @media (min-width: 768px) {
   body > .home {
     padding-top: 250px;
-    /* background-image: linear-gradient(to bottom right, #6fdbcc, #2a85ba); */
     background-image: linear-gradient(to bottom right, #e82c54, #070960);
     justify-content: flex-end;
   }
 }
 .home > .cont-title {
+  text-shadow: none;
   height: auto;
+  color: #dadfea;
 }
 @media (min-width: 768px) {
   .home > .cont-title {
@@ -22,8 +25,9 @@ body > .home {
     margin-left: 90px;
   }
 }
-.cont-svcs > .svcs__image {
-  background-color: rgb(179, 26, 218);
-  width: 18rem;
-  height: 10.6rem;
-}
+
+/* .svcs__link > .svcs__image {
+  width: 100%;
+  max-height: 315px;
+  height: 100%;
+} */

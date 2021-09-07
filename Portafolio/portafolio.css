@@ -1,6 +1,8 @@
 /*<!--Portafolio-->*/
 /* Utiliza propiedades del Index.css */
 body > .home {
+  background-image: none;
+  background-color: hsl(233, 47%, 7%);
   height: auto;
   padding: 200px 0 100px 0;
   transition: all 0.5s ease-in-out;
@@ -13,7 +15,9 @@ body > .home {
   }
 }
 .home > .cont-title {
+  text-shadow: none;
   height: auto;
+  color: #dadfea;
 }
 @media (min-width: 768px) {
   .home > .cont-title {
@@ -21,9 +25,6 @@ body > .home {
     margin-left: 90px;
   }
 }
-
-.cont-svcs > .svcs__image {
-  background-color: turquoise;
-  width: 18rem;
-  height: 10.6rem;
+.svcs__link > .svcs__image {
+  width: 100%;
 }

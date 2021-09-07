@@ -18,14 +18,12 @@
     <!--Header-Zone-->
     <link rel="stylesheet" href="./Header/header.css" />
     <script defer src="./Header/header.js"></script>
-    <!--Service-Zone-->
-    <link rel="stylesheet" href="./Service/service.css" />
-    <!--El portafolio.js es compartido tanto por potafolio.html y service.html-->
 
-    <script defer src="./Portafolio/portafolio.js"></script>
     <!--Index-Zone-->
     <link rel="stylesheet" href="./index.css" />
-
+    <!--Service-Zone-->
+    <link rel="stylesheet" href="./Service/service.css" />
+    <script async src="./Service/service.js"></script>
     <!--Footer-Zone-->
     <link rel="stylesheet" href="./Footer/footer.css" />
     <script defer src="./Footer/footer.js"></script>
@@ -40,17 +38,15 @@
         <h1 class="home__title title--big">Servicios</h1>
       </div>
     </section>
-    <!--A este cont-svcs-main debo agregarle contenido desde el <Template>-->
+    <!--Al cont-svcs-main le agrego el contenido desde el <Template>-->
     <section class="svcs">
       <div class="cont-svcs-main"></div>
     </section>
-    <!--Template-->
     <template>
-      <div class="cont-svcs center">
-        <a class="svcs__link" href="">
+      <div class="cont-svcs">
+        <a class="svcs__link" href="" target="_blanck">
           <img class="svcs__image" src="" alt="" />
         </a>
-        <!--<div class="svcs__image"></div> -->
         <h3 class="svcs__sub-title"></h3>
         <p class="svcs__paragraph"></p>
       </div>

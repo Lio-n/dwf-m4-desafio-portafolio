@@ -11,7 +11,7 @@ const headerComponent = (headerEl) => {
       <header class="home-header" role="banner">
         <!--Logo-->
         <label class="home__logo">
-          <a class="logo" href="./index.html"><p>Lion</p></a>
+          <a class="logo" href="./index.html"><img src="./Image/Lion_logo.png" alt=""></a>
         </label>
         <!--Menu-Burger-->
         <ul class="cont-nav-menu">

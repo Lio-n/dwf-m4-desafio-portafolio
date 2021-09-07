@@ -8,7 +8,7 @@ const footerComponent = (footerEl) => {
   const divEl = document.createElement("div");
   divEl.innerHTML = `
     <div class="footer__logo">
-        <a class="logo" href=" "><p>@Lion</p></a>
+        <a class="logo" href=" "><img src="./Image/Lion_logo.png" alt=""></a>
     </div>
     <!--Links-Social-Media-->
     <div class="cont-social-net">

@@ -11,28 +11,71 @@ const contactComponent = (contactEl) => {
     <div class="contact__container">
         <h2 class="contact__title title--lil">Escribime</h2>
 
-        <form class="contact-form">
+        <form class="contact-form" id="form">
           <!--Contact-Form__Name-->
           <label class="contact-form__group">
             <span class="contact-form__span">NOMBRE</span>
-            <input type="text" class="contact-form__input" />
+            <input type="text" name="name" class="contact-form__input" />
           </label>
 
           <!--Contact-Form__Email-->
           <label class="contact-form__group">
             <span class="contact-form__span">EMAIL</span>
-            <input type="email" class="contact-form__input" />
+            <input type="email"  name="email" class="contact-form__input" />
           </label>
 
           <!--Contact-Form__Message-->
           <label class="contact-form__group">
             <span class="contact-form__span">MENSAJE</span>
-            <textarea class="contact-form__textarea"></textarea>
+            <textarea  name="message" class="contact-form__textarea"></textarea>
           </label>
 
-          <button class="contact-form__button">Enviar</button>
+          <button class="contact-form__button" type="submit">Enviar</button>
         </form>
       </div>
     `;
   contactEl.appendChild(divEl);
 };
+
+const formulario = ($formEl) => {
+  $formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const dataForm = new FormData($formEl);
+
+    const data = {
+      to: dataForm.get("email"),
+      message: dataForm.get("message"),
+    };
+    console.log(data);
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "content-type": "application/json" },
+    });
+  });
+};
+
+(function main() {
+  window.onload = () => {
+    /* Header.js */
+    const headerEl = document.querySelector(".header");
+    headerComponent(headerEl);
+
+    var menuBurgerEl = document.querySelector(".menu-btn");
+    desplegarMenu(menuBurgerEl);
+
+    /* contact.js */
+    var contactEl = document.querySelector(".contact");
+    contactComponent(contactEl);
+
+    /* footer.js */
+    var footerEl = document.querySelector("footer");
+    footerComponent(footerEl);
+
+    var $formEl = document.getElementById("form");
+
+    formulario($formEl);
+  };
+})();
